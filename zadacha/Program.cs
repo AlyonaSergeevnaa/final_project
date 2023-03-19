@@ -22,7 +22,7 @@ int CheckString(string[] array)
     return count;
 }
 
-string[] FillResultArray(string[] array, int count)
+string[] ResultString(string[] array, int count)
 {
     string[] result = new string[count];
     for (int i = 0; i < array.Length; i++)
