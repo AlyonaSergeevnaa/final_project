@@ -7,4 +7,17 @@
 // ["1234", "1567", "-2", "computer science"] -> ["-2"]
 // ["Russia", "Denmark", "Kazan"] -> []
 
-string[] array = { "hello", "2", "world", ":-)"};
+string[] array = { "hello", "2", "world", ":-)", "1234", "1567", "-2", "computer science","Russia", "Denmark", "Kazan" };
+
+int count = CheckString(array);
+string[] resultArray = ResultString(array, count);
+int CheckString(string[] array)
+
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3) count++;
+    }
+    return count;
+}
